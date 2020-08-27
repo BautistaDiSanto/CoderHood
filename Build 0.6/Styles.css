@@ -1,0 +1,191 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Images/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0; /*tamaño externo*/
+  font-family: "Oswald", sans-serif;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  padding-left: 5%;
+}
+ul a {
+  padding: 1em;
+  text-decoration: none;
+  color: inherit;
+}
+ul a:hover {
+  color: black;
+  background-color: lightcoral;
+}
+.button-header {
+  background-color: #000000;
+  color: lightcoral;
+  cursor: pointer;
+  border: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+.button-header:hover {
+  background-color: lightcoral;
+  color: black;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 20% auto;
+  align-items: center;
+  padding: 1em;
+  width: 30%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+}
+.closebtn {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 2.5em;
+  float: right;
+  margin-top: -0.5em;
+}
+.closebtn:hover {
+  color: white;
+  cursor: pointer;
+}
+.modal-content h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: -0.2em;
+}
+.hero-btn {
+  display: block;
+  width: 200px;
+  padding: 0.5em;
+  margin-top: 50px;
+  border: 3px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5em;
+  margin-top: -0.2em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.middle {
+  background-color: lightcoral;
+  height: 100vh;
+  font-size: 1.5em;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.middle1 {
+  background-image: linear-gradient(
+    to right,
+    #f08080,
+    #f08080,
+    #af5e65,
+    #000000,
+    #000000,
+    #000000
+  );
+  color: black;
+  display: flex;
+  flex-direction: row;
+  height: 50vh;
+}
+.middle1 .sub1 {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 5%;
+}
+.middle1 .sub2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+.middle2 {
+  background-color: black;
+  color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.middle2 .sub {
+  margin: 5%;
+}
+#clases {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#clases h2 {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+#clase iframe {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background-color: black;
+  color: lightcoral;
+  display: flex;
+  justify-content: center;
+}
